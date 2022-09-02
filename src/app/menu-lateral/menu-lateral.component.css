@@ -1,18 +1,10 @@
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
 
-::ng-deep :root {  
-    --cor-base-autoluks:#212121;
-    --cor-base-complementar-autoluks: #a82e2e;
-    --background-sidebar-autoluks:url(https://www.autoluks.com.br/uploads/1/1/5/6/115643989/background-images/1817667807.jpg);
-
-    --cor-base-lukscolor:#016730;
-    --cor-base-complementar-lukscolor: #ff9c0a;
-    --background-sidebar-lukscolor: #016730;
-    
-
-    --cor-base: var(  --cor-base-autoluks);
-    --cor-base-complementar:var( --cor-base-complementar-autoluks);
-    --background-sidebar: var(--background-sidebar-autoluks);
+::ng-deep :root { 
+    /* --cor-base: #1d373e;  */
+    --cor-base: #0b3468;
+    --cor-base-complementar:#048bb1;
+    --background-sidebar: #f89500;
 
 }
 
@@ -72,12 +64,17 @@ a:focus {
 }
 
 
-.sidebarLukscolor {   
-    background: var(--cor-base) !important; 
-    background-image:var(--cor-base) !important; 
+
+.sidebarYuppie { 
+    background-image: url('src/assets/images/sidebarBG.jpg') !important;
+    background-repeat: no-repeat !important;    
+    background-position: 90% 45% !important;
+    background-attachment: fixed !important;
+    background-size: cover !important;
+    color: #fff;
 }
-.sidebarAutoluks { 
-    background-image: url(https://www.autoluks.com.br/uploads/1/1/5/6/115643989/background-images/1817667807.jpg) !important;
+#sidebar {
+    background-image: url('src/assets/images/sidebarBG.jpg') !important;
     background-repeat: no-repeat !important;    
     background-position: 90% 45% !important;
     background-attachment: fixed !important;
@@ -91,6 +88,7 @@ a:focus {
 }
 
 #sidebar .sidebar-header {
+    
     padding: 10px;
     /* background: var(--cor-base); */
     background: transparent;
@@ -113,14 +111,14 @@ a:focus {
 }
 
 #sidebar ul li a:hover {
-    color: var(--cor-base-autoluks);;
-    background: #fff;
+    color: #fff;
+    background: var(--cor-base-complementar);
 }
 
 #sidebar ul li.active>a,
 a[aria-expanded="true"] {
     color: #fff;
-    background: var(--cor-base-autoluks);
+    background: var(--cor-base);
 }
 
 .sidebar-header {

@@ -6,15 +6,12 @@
 
         <nav id="sidebar" [className]="toggle ? 'active' : 'inactive'" class="grid">
             <div style="margin-top:10%" class="sidebar-header">
-                <h1 id="header" class="text-6xl"><b>Luks</b>Move</h1>
+                <h1 id="header" class="text-5xl"><b>Roteirizador</b> </h1>
             </div>
             <ul class="list-unstyled components  flex-grow-1 flex-shrink-1 col-12">
-                <p-chip id="idAvatar" [hidden]="temaLuksColor" label="SP1103" image="assets/images/avatarAutoLuks.png"
+                <p-chip id="idAvatar" label="Jonathan Rossato" image="assets/images/man.png"
                     styleClass="text-align-center custom-chip min-w-full  shadow-8 ">
-                </p-chip>
-                <p-chip id="idAvatar" [hidden]="!temaLuksColor" label="SP1103" image="assets/images/lukscolorR.png"
-                    styleClass="text-align-center custom-chip min-w-full  shadow-8 ">
-                </p-chip>
+                </p-chip>               
 
                 <li>
                     <a class="px-5 align-items-center linkLateral" routerLink="/app/dashboard"><i
@@ -47,13 +44,8 @@
 
             </ul>
             <div class="flex-grow-1 flex-shrink-1 "></div>
-            <div class="flex-grow-1 flex-shrink-0 " style="margin-top: 32vh">
-                <img [hidden]="temaLuksColor" src="assets/images/landscape-white.png" alt="Image"
-                    class="p-image-mask w-min" style="padding-left: 5%;" >
-                    <!-- style="margin-top: 31vh;margin-left: 7%;height: 4%;"> -->
-                <img [hidden]="!temaLuksColor" src="assets/images/lukscolorR.png" alt="Image" class="p-image-mask w-min"  style="padding-left:33%; margin-top: -2vh;">
-                   
-                <img src="assets/images/yuppie-white.png" alt="Image" class="p-image-mask w-min"   style="padding-left:25%; margin-top: 17%; height: 5vh;"> 
+            <div class="flex-grow-1 flex-shrink-0 " style="margin-top: 38vh">              
+                <img src="assets/images/yuppie-white.png" alt="Image" class="p-image-mask w-min"   style="padding-left:8%; margin-top: 7%; height: 8vh;"> 
                    
             </div>
         </nav>
@@ -85,16 +77,7 @@
                             <h1 id="h1Titulo" class=" text-6xl nav-item active"></h1>
                         </div>
                         <div class="flex-grow-1 flex-shrink-1 flex"></div>
-
-                    </div>
-                    <button [hidden]="temaLuksColor" id="mudarTema1" class="theme-btn" style="background-color: green;"
-                        title="LuksColor">
-                        <img style="height: 15px; " src="assets/images/lukscolorR.png" alt="LuksColor">
-                    </button>
-                    <button [hidden]="!temaLuksColor" id="mudarTema2" class="theme-btn" style="background-color: black;"
-                        title="AutoLuks">
-                        <img style="height: 10px;" src="assets/images/landscape-white.png" alt="AutoLuks">
-                    </button>
+                    </div>                 
                 </div>
             </nav>
 
