@@ -73,12 +73,13 @@ body {
   margin: 50px 30px 40px;
 }
 .eula {
-  margin-top: 10%;
-  color: #999;
-  font-size: 20px;
-  line-height: 1.5;
-  margin: 25px;
-  padding-top: 25px;
+    
+     color: #999;
+     font-size: 22px;
+     line-height: 1.5;
+    
+     padding: 5%;
+     margin-left: 9%;
 }
 /* .eula {
   margin-top: 10%;
@@ -103,7 +104,7 @@ body {
   position: relative;
   width: 15%;
   margin-top: 2%;
-  height: 90%;
+  height: 70%;
 }
 @media (max-width: 767px) {
   .right {

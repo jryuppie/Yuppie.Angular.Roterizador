@@ -5,48 +5,52 @@
     <div class="wrapper">
 
         <nav id="sidebar" [className]="toggle ? 'active' : 'inactive'" class="grid">
-            <div style="margin-top:10%" class="sidebar-header">
-                <h1 id="header" class="text-5xl"><b>Roteirizador</b> </h1>
-            </div>
-            <ul class="list-unstyled components  flex-grow-1 flex-shrink-1 col-12">
-                <p-chip id="idAvatar" label="Jonathan Rossato" image="assets/images/man.png"
-                    styleClass="text-align-center custom-chip min-w-full  shadow-8 ">
-                </p-chip>               
+            <div class="flex flex-column" style="height: 99%;">
+                <div style="margin-top:10%" class="sidebar-header flex-grow-0">
+                    <h1 id="header" class="text-5xl"><b>Roteirizador</b> </h1>
+                </div>
+                <ul class="list-unstyled components  flex-grow-0 flex-shrink-1 ">
+                    <p-chip id="idAvatar" label="Jonathan Rossato" image="assets/images/man.png"
+                        styleClass="text-align-center custom-chip min-w-full  shadow-8 ">
+                    </p-chip>
 
-                <li>
-                    <a class="px-5 align-items-center linkLateral" routerLink="/app/dashboard"><i
-                            class="material-icons left mr-2 mb-2 ">
-                            pie_chart</i><span>Dashboard</span></a>
-                </li>
-                <li>
-                    <a class="px-5" routerLink="/app/mapaEquipe"><i class="material-icons left mr-2 linkLateral">
-                            person_pin_circle</i>Mapa Equipe</a>
-                </li>
-                <li>
-                    <a class="px-5" routerLink="/app/agendarPlanejar"><i class="material-icons left mr-2 linkLateral">
-                            layers</i>Planejar Rotas </a>
-                </li>
-                <!-- <li><a class="px-5 menu" ><i
+                    <li>
+                        <a class="px-5 align-items-center linkLateral" ><i
+                                class="material-icons left mr-2 mb-2 ">
+                                pie_chart</i><span>Dashboard</span></a>
+                    </li>
+                    <li>
+                        <a class="px-5" ><i class="material-icons left mr-2 linkLateral">
+                                person_pin_circle</i>Mapa Equipe</a>
+                    </li>
+                    <li>
+                        <a class="px-5" routerLink="/app/agendarPlanejar"><i
+                                class="material-icons left mr-2 linkLateral">
+                                layers</i>Planejar Rotas </a>
+                    </li>
+                    <!-- <li><a class="px-5 menu" ><i
                             class="material-icons left mr-2 linkLateral"> settings</i>Configurações</a>
                             <ul>
                                 <li><a (click)="mudarTitulo('Configurações')" href="#" routerLink="/app/configuracoes">Usuarios</a></li>                             
                              </ul>
                 </li> -->
-                <li class="px-4 dropdown-submenu"><a class="dropdown-item">
-                        <i class="material-icons"> settings</i>
-                        Configurações
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="linkSubmenu" routerLink="/app/usuarios">Usuários</a></li>
-                        <li><a class="linkSubmenu" routerLink="/app/configuracoes">Google</a></li>
-                    </ul>
-                </li>
+                    <li class="px-4 dropdown-submenu"><a class="dropdown-item">
+                            <i class="material-icons"> settings</i>
+                            Configurações
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="linkSubmenu" routerLink="/app/usuarios">Usuários</a></li>
+                            <li><a class="linkSubmenu" routerLink="/app/configuracoes">Google</a></li>
+                        </ul>
+                    </li>
 
-            </ul>
-            <div class="flex-grow-1 flex-shrink-1 "></div>
-            <div class="flex-grow-1 flex-shrink-0 " style="margin-top: 38vh">              
-                <img src="assets/images/yuppie-white.png" alt="Image" class="p-image-mask w-min"   style="padding-left:8%; margin-top: 7%; height: 8vh;"> 
-                   
+                </ul>
+                <div class="flex-grow-1 flex align-items-end" style="margin-top: 0vh"></div>
+                <div>
+                    <img src="assets/images/yuppie-white.png" alt="Image" class="p-image-mask w-min col-12"
+                            style="padding-left:10%; height: 100px;">
+
+                </div>
             </div>
         </nav>
 
@@ -77,7 +81,7 @@
                             <h1 id="h1Titulo" class=" text-6xl nav-item active"></h1>
                         </div>
                         <div class="flex-grow-1 flex-shrink-1 flex"></div>
-                    </div>                 
+                    </div>
                 </div>
             </nav>
 
