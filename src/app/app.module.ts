@@ -49,6 +49,7 @@ import {ToolbarModule} from 'primeng/toolbar';
 import {RippleModule} from 'primeng/ripple';
 import {PanelMenuModule} from 'primeng/panelmenu';
 import {InputSwitchModule} from 'primeng/inputswitch';
+import {ProgressSpinnerModule} from 'primeng/progressspinner';
 //#endregion
 
  //#region <Outros Componentes> 
@@ -75,7 +76,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     FormsModule,ReactiveFormsModule,
     DialogModule,CardModule,ButtonModule,ListboxModule,PanelModule,MenuModule,InputTextModule,HttpClientModule,TimelineModule
     ,ChipModule,MatButtonToggleModule,MessageModule,MessagesModule,ToastModule,NgParticlesModule,ChartModule,ConfirmDialogModule,TableModule,RippleModule,ToolbarModule
-    ,PanelMenuModule,InputSwitchModule  
+    ,PanelMenuModule,InputSwitchModule,ProgressSpinnerModule  
   ],
   providers: [MenuLateralService,ConfiguracoesService],
   bootstrap: [AppComponent]
